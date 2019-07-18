@@ -1,6 +1,4 @@
-var used = [];
-var str = '123';
-var output = '';
+
 
 function permute() {
 
@@ -22,5 +20,9 @@ function permute() {
         }
     }
 }
+
+var used = [];
+var str = 'abcd';
+var output = '';
 
 permute();
