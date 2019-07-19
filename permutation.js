@@ -1,6 +1,5 @@
-
-
-function permute() {
+// works for string as input
+function permuteStrings() {
 
     if (str.length === output.length) {
         console.log(output);
@@ -14,7 +13,7 @@ function permute() {
         else {
             used[i] = true;
             output = output.concat(str[i]);
-            permute();
+            permuteStrings();
             used[i] = false;
             output = output.slice(0, -1);
         }
@@ -22,7 +21,9 @@ function permute() {
 }
 
 var used = [];
-var str = 'abcd';
-var output = '';
+var str = [1, 2, 3];
+var output = []; // var output = '';
+var permutations= [];
 
-permute();
+permuteStrings();
+console.log(permutations);
