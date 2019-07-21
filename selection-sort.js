@@ -1,6 +1,6 @@
 // assume the first element of the array is small
-// compare it with all the other element, to find the smaller than it
-// insert it in new array
+// compare it with all the other elements, to find the smaller than it
+// insert it in the beginings of the array
 
 
 function selection_sort(arr, start = 0) {
