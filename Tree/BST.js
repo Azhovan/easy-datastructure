@@ -60,6 +60,22 @@ class BST {
 
     }
 
+    find(value, root) {
+        if(value  === root.value) {
+            return root;
+        }
+
+        if(value < root.value){
+            return this.find(value, root.left);
+        }
+
+        if(value > root.value) {
+            return this.find(value, root.right);
+        }
+
+        return  false;
+    }
+
     /**
      * Go  left
      * Process current node
@@ -154,3 +170,6 @@ bst.insertNode(new Node(3), root);
 
 //post-order
 // console.log(bst.postOrder(root));
+
+// find and element with value = 5
+// console.log(bst.find(5, bst.root));

@@ -38,7 +38,7 @@ class Node {
         }
 
         this.right = node;
-        this.left.parent = this;
+        this.right.parent = this;
 
         return this;
     }
