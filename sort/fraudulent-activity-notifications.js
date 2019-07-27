@@ -119,7 +119,7 @@ fs.readFile(filePath, {encoding: 'utf-8'}, function (err, data) {
     if (!err) {
         arr = data.split(',');
         console.log(
-            activityNotifications(arr, 40001)
+            activityNotifications(arr, 30000)
         );
 
     } else {
