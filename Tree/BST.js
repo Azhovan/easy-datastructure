@@ -61,6 +61,9 @@ class BST {
     }
 
     /**
+     * Go  left
+     * Process current node
+     * Go right
      *
      * @param {Node} root
      * @returns {*[]}
@@ -84,6 +87,14 @@ class BST {
         return this.travers;
     }
 
+    /**
+     * Process current node
+     * Go to left
+     * Go to right
+     *
+     * @param root
+     * @returns {Array}
+     */
     preOrder(root)
     {
         this.travers.push(root.value);
@@ -98,6 +109,29 @@ class BST {
 
         return this.travers;
 
+    }
+
+    /**
+     * Go left
+     * Go right
+     * process current node
+     *
+     * @param root
+     * @returns {Array}
+     */
+    postOrder(root) {
+
+        if(root.left) {
+            this.postOrder(root.left) ;
+        }
+
+        if(root.right) {
+            this.postOrder(root.right);
+        }
+
+        this.travers.push(root.value);
+
+        return this.travers;
     }
 
 }
@@ -116,4 +150,7 @@ bst.insertNode(new Node(3), root);
 // console.log(bst.inOrder(bst.root)); // [ 0, 2, 3, 4, 5 ]
 
 // pre-order
-console.log(bst.preOrder(bst.root)); // [ 4, 2, 0, 3, 5 ]
+// console.log(bst.preOrder(bst.root)); // [ 4, 2, 0, 3, 5 ]
+
+//post-order
+// console.log(bst.postOrder(root));
