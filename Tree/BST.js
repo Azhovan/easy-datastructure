@@ -89,6 +89,69 @@ class BST {
     }
 
     /**
+     * Find it
+     * Delete it
+     *    - if it does not have children ===> just delete it
+     *    - if it does have ONLY one child ===> replace the node with it's child
+     *    - if it does have 2 children ===> replace it with smallest key in right-subtree
+     * @param value
+     * @returns {*|boolean|boolean}
+     */
+    delete(value) {
+        let node = this.find(value, this.root);
+        if (!node) {
+            return false;
+        }
+
+        if (this.getChildren(node).length === 0) {
+
+            if (BST.isLeftChild(node)) {
+                node.parent.left = null;
+            } else if (BST.isRightChild(node)) {
+                node.parent.right = null;
+            }
+
+            return node;
+
+        } else if (this.getChildren(node).length === 1) {
+
+            if (node.left) {
+                node.left.parent = node.parent;
+
+                if (BST.isLeftChild(node)) {
+                    node.parent.left = node.left;
+                } else if (BST.isRightChild(node)) {
+                    node.parent.right = node.left;
+                }
+            } else if (node.right) {
+                node.right.parent = node.parent;
+
+                if (BST.isLeftChild(node)) {
+                    node.parent.left = node.right;
+                } else if (BST.isRightChild(node)) {
+                    node.parent.right = node.right;
+                }
+            }
+
+            return node;
+
+        } else if (this.getChildren(node).length === 2) {
+            // find the smallest key in right subtree
+            // replace the node with it
+            let smallest = this.smallest(node.right);
+            node.value = smallest.value;
+
+            if (BST.isLeftChild(smallest)) {
+                smallest.parent.left = null;
+            } else if (BST.isRightChild(smallest)) {
+                node.parent.right = null;
+            }
+
+            return node;
+        }
+    }
+
+    /**
      * Go  left
      * Process current node
      * Go right
@@ -161,6 +224,51 @@ class BST {
         return this.travers;
     }
 
+    /**
+     *  Determine if current node is his father right child
+     * @param node
+     * @returns {boolean}
+     */
+    static isRightChild(node) {
+        return node.parent.right === node;
+    }
+
+    /**
+     * Determine if current node is his father left child
+     * @param node
+     * @returns {boolean}
+     */
+    static isLeftChild(node) {
+        return node.parent.left === node;
+    }
+
+    /**
+     * Get children in subtree
+     * @param node
+     * @returns {*[]}
+     */
+    getChildren(node) {
+        let children = this.inOrder(node);
+
+        // exclude the node itself
+        children.splice(children.indexOf(node.value), 1);
+
+        return children;
+    }
+
+    /**
+     * Fin the smallest node in subtree
+     * @param root
+     * @returns {*}
+     */
+    smallest(root) {
+        if (root.left) {
+            return this.smallest(root.left);
+        }
+
+        return root.value;
+    }
+
 }
 
 // usage
@@ -183,4 +291,18 @@ bst.insertNode(new Node(3), root);
 // console.log(bst.postOrder(root));
 
 // find and element with value = 5
-console.log(bst.find(11, bst.root));
+// console.log(bst.find(5, bst.root));
+
+// find all child
+// console.log(bst.getChildren(bst.find(2, bst.root)).length); // 2
+
+// node is left child or is right child of his parent
+// console.log(BST.isLeftChild(bst.find(2, bst.root))); // true
+// console.log(BST.isRightChild(bst.find(5, bst.root))); // true
+
+// smallest node in subtree
+// console.log(bst.smallest(bst.find(2, bst.root)));
+
+// delete node = 2 ;
+// console.log(bst.delete(0));
+// console.log('in-order: ', bst.inOrder(bst.root));
