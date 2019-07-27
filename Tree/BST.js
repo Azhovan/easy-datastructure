@@ -60,20 +60,32 @@ class BST {
 
     }
 
+    /**
+     * If current node === needle, return;
+     * else Go to left
+     *      Go to right
+     * @param value
+     * @param root
+     * @returns {*|boolean|boolean|*}
+     */
     find(value, root) {
-        if(value  === root.value) {
+        if (value === root.value) {
             return root;
         }
 
-        if(value < root.value){
-            return this.find(value, root.left);
+        if (value < root.value) {
+            if (root.left) {
+                return this.find(value, root.left);
+            }
         }
 
-        if(value > root.value) {
-            return this.find(value, root.right);
+        if (value > root.value) {
+            if (root.right) {
+                return this.find(value, root.right);
+            }
         }
 
-        return  false;
+        return false;
     }
 
     /**
@@ -111,15 +123,14 @@ class BST {
      * @param root
      * @returns {Array}
      */
-    preOrder(root)
-    {
+    preOrder(root) {
         this.travers.push(root.value);
 
-        if(root.left) {
+        if (root.left) {
             this.preOrder(root.left);
         }
 
-        if(root.right) {
+        if (root.right) {
             this.preOrder(root.right)
         }
 
@@ -137,11 +148,11 @@ class BST {
      */
     postOrder(root) {
 
-        if(root.left) {
-            this.postOrder(root.left) ;
+        if (root.left) {
+            this.postOrder(root.left);
         }
 
-        if(root.right) {
+        if (root.right) {
             this.postOrder(root.right);
         }
 
@@ -172,4 +183,4 @@ bst.insertNode(new Node(3), root);
 // console.log(bst.postOrder(root));
 
 // find and element with value = 5
-// console.log(bst.find(5, bst.root));
+console.log(bst.find(11, bst.root));
