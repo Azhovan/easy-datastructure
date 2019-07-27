@@ -16,6 +16,8 @@ function simpleSort(data) {
 
     //merge it
      merge(data, left, right);
+
+     return  data;
 }
 
 function merge(data, left, right) {
@@ -54,5 +56,5 @@ function merge(data, left, right) {
 }
 
 let sets = [11, 4, 0, 1, 6, 9, 5, 2, 3];
-simpleSort(sets);
-console.log(sets);
+let x = simpleSort(sets);
+console.log(x );

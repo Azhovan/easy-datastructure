@@ -48,3 +48,9 @@ out = [];
 arr = [10, 7, 12, 8, 3, 2, 6];
 quicksort(arr, 0, arr.length - 1);
 console.log(out);
+
+
+out = [];
+arr = [1,2,3,4,5,6,7];
+quicksort(arr, 0, arr.length - 1);
+console.log(out);
