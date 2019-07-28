@@ -103,8 +103,9 @@ class BST {
             return false;
         }
 
-        if (this.getChildren(node).length === 0) {
+        if (!node.left && !node.right) {
 
+            // there is no children
             if (BST.isLeftChild(node)) {
                 node.parent.left = null;
             } else if (BST.isRightChild(node)) {
@@ -113,7 +114,22 @@ class BST {
 
             return node;
 
-        } else if (this.getChildren(node).length === 1) {
+        }  else if (node.left && node.right) {
+            // there are two children
+            // find the smallest key in right subtree
+            // replace the node with it
+            let smallest = this.smallest(node.right);
+            node.value = smallest.value;
+
+            if (BST.isLeftChild(smallest)) {
+                smallest.parent.left = null;
+            } else if (BST.isRightChild(smallest)) {
+                node.parent.right = null;
+            }
+
+            return node;
+
+        } else {
 
             if (node.left) {
                 node.left.parent = node.parent;
@@ -135,19 +151,6 @@ class BST {
 
             return node;
 
-        } else if (this.getChildren(node).length === 2) {
-            // find the smallest key in right subtree
-            // replace the node with it
-            let smallest = this.smallest(node.right);
-            node.value = smallest.value;
-
-            if (BST.isLeftChild(smallest)) {
-                smallest.parent.left = null;
-            } else if (BST.isRightChild(smallest)) {
-                node.parent.right = null;
-            }
-
-            return node;
         }
     }
 
