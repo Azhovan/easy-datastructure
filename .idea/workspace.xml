@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="be5692bc-2a10-48c9-9ebc-df6b72c14d78" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/util.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/merge-k-sorted-list.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
@@ -15,12 +15,12 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="FileEditorManager">
-    <leaf>
-      <file pinned="false" current-in-tab="true">
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Tree/Heap/minHeap.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="207">
-              <caret line="50" column="29" selection-start-line="50" selection-start-column="29" selection-end-line="50" selection-end-column="47" />
+            <state relative-caret-position="2140">
+              <caret line="107" column="18" selection-start-line="107" selection-start-column="18" selection-end-line="107" selection-end-column="18" />
             </state>
           </provider>
         </entry>
@@ -28,8 +28,26 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$USER_HOME$/Downloads/LearningJavaScriptDataStructuresandAlgorithmsThirdEdition_Code/src/js/data-structures/heap.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="343">
-              <caret line="81" column="12" selection-start-line="81" selection-start-column="12" selection-end-line="81" selection-end-column="12" />
+            <state relative-caret-position="1880">
+              <caret line="94" column="3" selection-start-line="94" selection-start-column="3" selection-end-line="94" selection-end-column="3" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/merge-sort.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="566">
+              <caret line="53" column="5" lean-forward="true" selection-start-line="53" selection-start-column="5" selection-end-line="53" selection-end-column="5" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/merge-k-sorted-list.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="320">
+              <caret line="16" lean-forward="true" selection-start-line="16" selection-end-line="16" />
             </state>
           </provider>
         </entry>
@@ -87,6 +105,7 @@
         <option value="$PROJECT_DIR$/util.js" />
         <option value="$USER_HOME$/Downloads/LearningJavaScriptDataStructuresandAlgorithmsThirdEdition_Code/src/js/data-structures/heap.js" />
         <option value="$PROJECT_DIR$/Tree/Heap/minHeap.js" />
+        <option value="$PROJECT_DIR$/merge-k-sorted-list.js" />
       </list>
     </option>
   </component>
@@ -107,17 +126,6 @@
             <path>
               <item name="easy-datastructure" type="b2602c69:ProjectViewProjectNode" />
               <item name="easy-datastructure" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="easy-datastructure" type="b2602c69:ProjectViewProjectNode" />
-              <item name="easy-datastructure" type="462c0819:PsiDirectoryNode" />
-              <item name="Tree" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="easy-datastructure" type="b2602c69:ProjectViewProjectNode" />
-              <item name="easy-datastructure" type="462c0819:PsiDirectoryNode" />
-              <item name="Tree" type="462c0819:PsiDirectoryNode" />
-              <item name="Heap" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -156,7 +164,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Node.js.minHeap.js">
+  <component name="RunManager" selected="Node.js.merge-k-sorted-list.js">
     <configuration name="BST.js" type="NodeJSConfigurationType" temporary="true" nameIsGenerated="true" path-to-js-file="BST.js" working-dir="$PROJECT_DIR$/Tree">
       <method v="2" />
     </configuration>
@@ -166,7 +174,7 @@
     <configuration name="fraudulent-activity-notifications.js" type="NodeJSConfigurationType" temporary="true" nameIsGenerated="true" path-to-js-file="$PROJECT_DIR$/sort/fraudulent-activity-notifications.js" working-dir="$PROJECT_DIR$/sort">
       <method v="2" />
     </configuration>
-    <configuration name="merge-sort.js" type="NodeJSConfigurationType" temporary="true" nameIsGenerated="true" path-to-js-file="$PROJECT_DIR$/merge-sort.js" working-dir="$PROJECT_DIR$">
+    <configuration name="merge-k-sorted-list.js" type="NodeJSConfigurationType" temporary="true" nameIsGenerated="true" path-to-js-file="merge-k-sorted-list.js" working-dir="$PROJECT_DIR$">
       <method v="2" />
     </configuration>
     <configuration name="minHeap.js" type="NodeJSConfigurationType" temporary="true" nameIsGenerated="true" path-to-js-file="minHeap.js" working-dir="$PROJECT_DIR$/Tree/Heap">
@@ -174,11 +182,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Node.js.merge-k-sorted-list.js" />
         <item itemvalue="Node.js.minHeap.js" />
         <item itemvalue="Node.js.BST.js" />
         <item itemvalue="Node.js.Node.js" />
         <item itemvalue="Node.js.fraudulent-activity-notifications.js" />
-        <item itemvalue="Node.js.merge-sort.js" />
       </list>
     </recent_temporary>
   </component>
@@ -206,12 +214,14 @@
       <workItem from="1564218996993" duration="2941000" />
       <workItem from="1564231821441" duration="22899000" />
       <workItem from="1564431826499" duration="105000" />
-      <workItem from="1564548647462" duration="4400000" />
+      <workItem from="1564548647462" duration="5448000" />
+      <workItem from="1564640592773" duration="382000" />
+      <workItem from="1564841291057" duration="2391000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="119292000" />
+    <option name="totallyTimeSpent" value="123113000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -226,12 +236,12 @@
     <frame x="0" y="23" width="1440" height="806" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" weight="0.08597604" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.17547569" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.32911393" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.22431259" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.29811868" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -239,7 +249,7 @@
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="GraphQL" order="8" weight="0.26300985" />
       <window_info anchor="bottom" id="Version Control" order="9" />
-      <window_info anchor="bottom" id="Terminal" order="10" weight="0.27966103" />
+      <window_info anchor="bottom" id="Terminal" order="10" weight="0.27930537" />
       <window_info anchor="bottom" id="Event Log" order="11" side_tool="true" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
@@ -337,13 +347,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/merge-sort.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="347">
-          <caret line="59" column="14" selection-start-line="59" selection-start-column="14" selection-end-line="59" selection-end-column="14" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/insertion-sort.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="140">
@@ -408,17 +411,31 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$USER_HOME$/Downloads/LearningJavaScriptDataStructuresandAlgorithmsThirdEdition_Code/src/js/data-structures/heap.js">
+    <entry file="file://$PROJECT_DIR$/Tree/Heap/minHeap.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="343">
-          <caret line="81" column="12" selection-start-line="81" selection-start-column="12" selection-end-line="81" selection-end-column="12" />
+        <state relative-caret-position="2140">
+          <caret line="107" column="18" selection-start-line="107" selection-start-column="18" selection-end-line="107" selection-end-column="18" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Tree/Heap/minHeap.js">
+    <entry file="file://$USER_HOME$/Downloads/LearningJavaScriptDataStructuresandAlgorithmsThirdEdition_Code/src/js/data-structures/heap.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="207">
-          <caret line="50" column="29" selection-start-line="50" selection-start-column="29" selection-end-line="50" selection-end-column="47" />
+        <state relative-caret-position="1880">
+          <caret line="94" column="3" selection-start-line="94" selection-start-column="3" selection-end-line="94" selection-end-column="3" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/merge-sort.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="566">
+          <caret line="53" column="5" lean-forward="true" selection-start-line="53" selection-start-column="5" selection-end-line="53" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/merge-k-sorted-list.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="320">
+          <caret line="16" lean-forward="true" selection-start-line="16" selection-end-line="16" />
         </state>
       </provider>
     </entry>
