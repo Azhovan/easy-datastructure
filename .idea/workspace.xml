@@ -2,8 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="be5692bc-2a10-48c9-9ebc-df6b72c14d78" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/find-adds-up.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/top-k-frequent-elements.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/common-element-in-sorted-array.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/util.js" beforeDir="false" afterPath="$PROJECT_DIR$/util.js" afterDir="false" />
     </list>
@@ -69,17 +68,26 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/util.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="60">
-              <caret line="3" selection-start-line="3" selection-end-line="3" />
+            <state>
+              <caret column="36" selection-start-column="36" selection-end-column="52" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/common-element-in-sorted-array.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="254">
+              <caret line="15" column="22" selection-start-line="15" selection-start-column="22" selection-end-line="15" selection-end-column="22" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/find-adds-up.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="180">
-              <caret line="9" column="13" selection-start-line="9" selection-start-column="13" selection-end-line="9" selection-end-column="13" />
+            <state relative-caret-position="280">
+              <caret line="14" column="32" lean-forward="true" selection-start-line="14" selection-start-column="32" selection-end-line="14" selection-end-column="32" />
               <folding>
                 <element signature="n#!!doc" expanded="true" />
               </folding>
@@ -151,8 +159,9 @@
         <option value="$PROJECT_DIR$/merge-k-sorted-list.js" />
         <option value="$PROJECT_DIR$/k-frequent-elements.js" />
         <option value="$PROJECT_DIR$/top-k-frequent-elements.js" />
-        <option value="$PROJECT_DIR$/util.js" />
         <option value="$PROJECT_DIR$/find-adds-up.js" />
+        <option value="$PROJECT_DIR$/util.js" />
+        <option value="$PROJECT_DIR$/common-element-in-sorted-array.js" />
       </list>
     </option>
   </component>
@@ -211,14 +220,14 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Node.js.find-adds-up.js">
+  <component name="RunManager" selected="Node.js.common-element-in-sorted-array.js">
+    <configuration name="common-element-in-sorted-array.js" type="NodeJSConfigurationType" temporary="true" nameIsGenerated="true" path-to-js-file="common-element-in-sorted-array.js" working-dir="$PROJECT_DIR$">
+      <method v="2" />
+    </configuration>
     <configuration name="find-adds-up.js" type="NodeJSConfigurationType" temporary="true" nameIsGenerated="true" path-to-js-file="find-adds-up.js" working-dir="$PROJECT_DIR$">
       <method v="2" />
     </configuration>
     <configuration name="merge-k-sorted-list.js" type="NodeJSConfigurationType" temporary="true" nameIsGenerated="true" path-to-js-file="merge-k-sorted-list.js" working-dir="$PROJECT_DIR$">
-      <method v="2" />
-    </configuration>
-    <configuration name="minHeap.js" type="NodeJSConfigurationType" temporary="true" nameIsGenerated="true" path-to-js-file="minHeap.js" working-dir="$PROJECT_DIR$/Tree/Heap">
       <method v="2" />
     </configuration>
     <configuration name="top-k-frequent-elements.js" type="NodeJSConfigurationType" temporary="true" nameIsGenerated="true" path-to-js-file="top-k-frequent-elements.js" working-dir="$PROJECT_DIR$">
@@ -229,11 +238,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Node.js.find-adds-up.js" />
+        <item itemvalue="Node.js.common-element-in-sorted-array.js" />
         <item itemvalue="Node.js.util.js" />
+        <item itemvalue="Node.js.find-adds-up.js" />
         <item itemvalue="Node.js.top-k-frequent-elements.js" />
         <item itemvalue="Node.js.merge-k-sorted-list.js" />
-        <item itemvalue="Node.js.minHeap.js" />
       </list>
     </recent_temporary>
   </component>
@@ -264,12 +273,12 @@
       <workItem from="1564548647462" duration="5448000" />
       <workItem from="1564640592773" duration="382000" />
       <workItem from="1564841291057" duration="8948000" />
-      <workItem from="1564918464674" duration="2572000" />
+      <workItem from="1564918464674" duration="4806000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="132242000" />
+    <option name="totallyTimeSpent" value="134476000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -498,13 +507,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/util.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="60">
-          <caret line="3" selection-start-line="3" selection-end-line="3" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/top-k-frequent-elements.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="141">
@@ -517,11 +519,25 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/find-adds-up.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="180">
-          <caret line="9" column="13" selection-start-line="9" selection-start-column="13" selection-end-line="9" selection-end-column="13" />
+        <state relative-caret-position="280">
+          <caret line="14" column="32" lean-forward="true" selection-start-line="14" selection-start-column="32" selection-end-line="14" selection-end-column="32" />
           <folding>
             <element signature="n#!!doc" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/util.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="36" selection-start-column="36" selection-end-column="52" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/common-element-in-sorted-array.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="254">
+          <caret line="15" column="22" selection-start-line="15" selection-start-column="22" selection-end-line="15" selection-end-column="22" />
         </state>
       </provider>
     </entry>
